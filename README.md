@@ -16,3 +16,6 @@ A simple Python-based password generator that creates strong, secure passwords u
    ```bash
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
+2. Run the script:
+   ***bash
+   python password_generator.py
