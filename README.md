@@ -18,5 +18,5 @@ A simple Python-based password generator that creates strong, secure passwords u
    cd your-repo
 2. Run the script:
    ```bash
-   python password_generator.py ```
+   python password_generator.py 
 
