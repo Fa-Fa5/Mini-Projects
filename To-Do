@@ -1,0 +1,45 @@
+#To-Do List by Python
+tasks=[]
+
+def add_tasks():
+    add=input("Enter the tasks you would like to add:")
+    tasks.append(add)
+    print("The task has been successfully added.")
+    print("Your current tasks are:",tasks)
+
+def view_tasks():
+    if len(tasks)==0:
+        print("You dont have any current tasks.")
+    else:
+        print("Your current tasks are:")
+        for i, add in enumerate(tasks,1):
+            print(f'{i}.{add}')
+
+def delete_tasks():
+    if len(tasks)==0:
+        print("No tasks to delete")
+    else:
+        for i, add in enumerate(tasks,1):
+            print(f"{i}.{add}")
+        d =input("\n Type the task you would like to delete (case sensitive):")
+        try:
+                tasks.remove(d)
+                print("Task deleted successfully.")
+        except ValueError:
+                print("Error task not found")
+        
+
+while True:
+    print("\n Choose one option from below")
+    opt= input("\n 1.View Tasks \n 2.Add Tasks \n 3.Delete a Task \n 4.Exit")
+    if opt=="1":
+        view_tasks()
+    elif opt=="2":
+        add_tasks()
+    elif opt=="3":
+        delete_tasks()
+    elif opt=="4":
+        print("\n Exiting...")
+        break
+    else:
+        print("\n Error please select only from the given options")
