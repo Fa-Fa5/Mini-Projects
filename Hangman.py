@@ -1,3 +1,4 @@
+#This file is linked with the hangmanwords file.
 import random
 from hangmanwords import word_list
 
