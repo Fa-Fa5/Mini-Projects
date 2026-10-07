@@ -1,5 +1,5 @@
 #Basic Calculator
-#Next step: make it into a website 
+
 def calculator(num1,num2,op):
     if op=="1":
         return num1+num2
